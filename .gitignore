@@ -1,0 +1,8 @@
+# IDE/tools
+__pycache__
+.vscode
+
+# Build
+/build
+/dist
+*.egg-info

@@ -1,0 +1,55 @@
+# The WHO's Director General's Speeches
+
+![Python](https://img.shields.io/badge/python-3.x-blue.svg)
+![MIT license](https://img.shields.io/badge/License-MIT-green.svg)
+
+Below is the Gen 2 service for retrieving the WHO's Director General's Speeches.
+
+# Operation
+
+## Install
+
+You can install the package using the following steps:
+
+1. `pip` install using an _admin_ prompt
+   ```{ps1}
+   pip uninstall NJGovNews
+   pip install -v git+https://github.com/TextCorpusLabs/NJGovNews.git
+   ```
+
+## Run
+
+You can run the package as follows:
+
+```{ps1}
+ NJGovNews SITE -out FILE_OUT
+```
+
+The scraper currently supports the following `SITE`s:
+
+1. The [Department of the Treasury ](https://nj.gov/treasury).
+   I.E. ` NJGovNews treasury -out "c:/data/news/nj_treasury.csv"`
+
+# Development
+
+## Prerequisites
+
+You can install the package _for development_ using the following steps:
+
+**Note**: You can replace steps 1-3 using the [VSCode](https://code.visualstudio.com/Download) Git:Clone command
+
+1. Download the project from [GitHub](https://github.com/TextCorpusLabs/NJGovNews)
+   * Click the green "Code" button on the right.
+     Select "Download Zip"
+2. Remove zip protections by right-clicking on the file, selecting properties, and checking "security: unblock"
+3. Unzip the folder.
+   I recommend using the folder _c:/repos/TextCorpusLabs/NJGovNews_
+4. Run `pip`'s edit install using an _admin_ prompt
+   ```{ps1}   
+   pip uninstall NJGovNews
+   pip install -v -e c:/repos/TextCorpusLabs/NJGovNews
+   ```
+5. Install the `nltk` add-ons using an _admin_ prompt
+   ```{ps1}   
+   python -c "import nltk;nltk.download('punkt')"
+   ```
