@@ -1,9 +1,9 @@
-# The WHO's Director General's Speeches
+# New Jersey Government News
 
 ![Python](https://img.shields.io/badge/python-3.x-blue.svg)
 ![MIT license](https://img.shields.io/badge/License-MIT-green.svg)
 
-Below is the Gen 2 service for retrieving the WHO's Director General's Speeches.
+Scrape news feeds from the New Jersey government
 
 # Operation
 
