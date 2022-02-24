@@ -9,13 +9,11 @@ from typeguard import typechecked
 @typechecked
 def main() -> None:
     parser = ArgumentParser(prog = 'NJGovNews', description = "Scrape the news feed from the New Jersey government")
-    subparsers = parser.add_subparsers(help = 'sub-commands')
-    treasury_parser(subparsers.add_parser('treasury', help = 'Treasury scraping'))
+    subparsers = parser.add_subparsers(required = True, help = 'sub-commands')
+    treasury_parser(subparsers.add_parser('treasury', help = 'Department of the Treasury'))
     args = parser.parse_args()
-
     print(f'NJGovNews v{__version__}')
     args.function(args.file_out)
-
 
 @typechecked
 def treasury_parser(parser: ArgumentParser) -> None:

@@ -9,6 +9,6 @@ from typeguard import typechecked
 @typechecked
 def scrape(file_out: pathlib.Path) -> None:
     print('---------')
-    print('SITE: treasury')
+    print('SITE: Department of the Treasury')
     print(f'file_out: {str(file_out)}')
     print('---------')

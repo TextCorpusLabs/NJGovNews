@@ -27,7 +27,7 @@ You can run the package as follows:
 
 The scraper currently supports the following `SITE`s:
 
-1. The [Department of the Treasury ](https://nj.gov/treasury).
+1. The [Department of the Treasury](https://nj.gov/treasury).
    I.E. ` NJGovNews treasury -out "c:/data/news/nj_treasury.csv"`
 
 # Development
