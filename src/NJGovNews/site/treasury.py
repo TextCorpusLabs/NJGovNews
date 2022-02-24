@@ -29,7 +29,7 @@ def scrape(file_out: pathlib.Path) -> None:
     print('---------')
     file_out.parent.mkdir(parents = True, exist_ok = True)
     cache = file_out.parent.joinpath('./treasury.cache.sqlite')
-    no_cache = {} #{const.URL_ROBOTS: 0, URL_LIST: 0}    
+    no_cache = {const.URL_ROBOTS: 0, URL_LIST: 0}    
     with requests.CachedSession(cache, backend = 'sqlite', urls_expire_after = no_cache) as session:
         session.headers['User-Agent'] = const.USER_AGENT
         rtxt = _get_robots(session)
