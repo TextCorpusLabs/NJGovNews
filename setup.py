@@ -1,5 +1,5 @@
 from setuptools import setup
-from src.install import InstallOverride
+from scripts.install import InstallOverride
 
 with open('README.md', 'r') as fp:
     long_description = fp.read()
@@ -20,7 +20,6 @@ setup(
         'Source': 'https://github.com/TextCorpusLabs/NJGovNews',
     },
     packages = ['NJGovNews'],
-    package_dir = {'': 'src'},
     entry_points = {
         'console_scripts': [
             'NJGovNews = NJGovNews.__main__:main'
