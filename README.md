@@ -5,6 +5,13 @@
 
 Scrape news feeds from the New Jersey government
 
+# Punch List
+
+Known bugs befor v1.0
+
+- [ ] GitHub Install
+- [ ] Encoding
+
 # Operation
 
 ## Install
