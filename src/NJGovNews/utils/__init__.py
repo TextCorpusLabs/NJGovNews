@@ -1,2 +1,2 @@
 from . import const
-from .utils import take_a_nap
+from .utils import nap_if_needed

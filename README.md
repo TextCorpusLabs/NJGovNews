@@ -30,6 +30,12 @@ The scraper currently supports the following `SITE`s:
 1. The [Department of the Treasury](https://nj.gov/treasury).
    I.E. ` NJGovNews treasury -out "c:/data/news/nj_treasury.csv"`
 
+## Cache
+
+This scraper uses `requests-cache` to improve performance.
+If you want to _force_ a full reload of all the data, delete the file called 'SITE.cache.sqlite'.
+It will be in the same folder as the _.csv_ the scraper created.
+
 # Development
 
 ## Prerequisites
