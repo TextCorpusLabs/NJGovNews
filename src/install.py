@@ -1,4 +1,3 @@
-import nltk
 from setuptools.command.install import install
 
 class InstallOverride(install):

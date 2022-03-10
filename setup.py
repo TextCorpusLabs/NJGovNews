@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from src.install import InstallOverride
 
 with open('README.md', 'r') as fp:
@@ -19,7 +19,7 @@ setup(
         'Bug Reports': 'https://github.com/TextCorpusLabs/NJGovNews/issues',
         'Source': 'https://github.com/TextCorpusLabs/NJGovNews',
     },
-    packages = ['NJGovNews'],
+    packages = find_packages(where = "src"),
     package_dir = {'': 'src'},
     entry_points = {
         'console_scripts': [
